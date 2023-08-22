@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Click Counter</title>
+</head>
+<body>
+<p id="count">Count: 0</p>
+<button id="incrementButton">Increment The Count</button>
+
+<script>
+let paragraphCount = document.getElementById('count');
+let incrementButton = document.getElementById('incrementButton');
+
+let count = 0;
+
+incrementButton.addEventListener('click', function() {
+  count = count + 1;
+  paragraphCount.textContent = 'Count: ' + count;
+});
+</script>
+</body>
+</html>
+
