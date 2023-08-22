@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Switcher</title>
+</head>
+<body>
+  <h2>Image Switcher</h2>
+<img id="image" src="">
+<button id="image1">Image 1</button>
+<button id="image2">Image 2</button>
+<p id="message"></p>
+
+<script>
+const image = document.getElementById('image');
+const image1 = document.getElementById('image1');
+const image2 = document.getElementById('image2');
+let message = document.getElementById('message');
+
+image1.addEventListener('click', function() {
+  image.src = 'https://www.aiub.edu/Files/Templates/NewAIUB/assets/images/aiub-logo.svg';
+  image.height = '140';
+  image.widht  = '140';
+  message.textContent = "This Picture is Image1";
+});
+
+image2.addEventListener('click', function() {
+  image.src = 'https://www.aiub.edu/Files/Uploads/original/banner-9.jpg';
+  image.height = '500';
+  image.widht  = '800';
+  message.textContent = "This Picture is Image2";
+});
+</script>
+</body>
+</html>
