@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM Manipulate</title>
+</head>
+<body>
+<div id="dom">Click the button and see a image</div>
+<button id="changeButton">Click</button>
+
+<script>
+let contentDiv = document.getElementById('dom');
+let changeButton = document.getElementById('changeButton');
+
+changeButton.addEventListener('click',()=>{
+  contentDiv.innerHTML = '<img src="https://www.aiub.edu/Files/Templates/NewAIUB/assets/images/aiub-logo.svg" alt="New Image">';
+});
+</script>
+</body>
+</html>
