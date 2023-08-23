@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>ChangeBackgroundColor</title>
+</head>
+<body>  
+    
+    <button id="myButton">Click</button>
+
+    <script>
+        function showAlertOnButtonClick(id) {
+        const button = document.getElementById(id);
+  
+           button.addEventListener('click', function() {
+           alert('Button clicked!');
+           });
+        }
+
+        showAlertOnButtonClick('myButton');
+
+    </script>
+</body>
+</html>
